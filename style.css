@@ -1,0 +1,112 @@
+body {
+  background-color: #dedede;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Căn giữa và tăng cỡ chữ cho các đoạn văn bản mô tả */
+p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+/* Danh sách thụt lề lùi vào bên trong, chữ vừa vặn */
+ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Khung chứa các ô màu */
+.container {
+  margin-top: 30px;
+}
+
+.container > div {
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.color-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* Các ô màu */
+.red { background-color: #ff0000; }
+.orange { background-color: #ff7f00; }
+.yellow { background-color: #ffff00; }
+.green { background-color: #00b000; }
+.blue { background-color: #4a90e2; }
+.indigo { background-color: #4b0082; }
+.purple { background-color: #800080; }
+.pink { background-color: #e600a0; }
+.white { background-color: #ffffff; }
+
+/* Nhãn chữ dưới ô màu */
+.label {
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/* ================================================== */
+/* MEDIA QUERIES                                      */
+/* ================================================== */
+
+/* Truy vấn #1: 772px (Tablet) */
+@media screen and (min-width: 772px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container > div {
+    width: 45%;
+  }
+
+  .color-box {
+    max-height: 30vh;
+  }
+}
+
+/* Truy vấn #2: 998px (Desktop) */
+@media screen and (min-width: 998px) {
+  .container > div {
+    width: 30%;
+  }
+}
